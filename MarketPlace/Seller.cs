@@ -13,11 +13,35 @@ namespace MarketPlace
 {
     public class Seller : Person
     {
-        string StoreName { get; set; }
-        public Seller(string name, string email, string phone, UserRole role, string login, string password, string storeName) : base(name, email, phone, role, login, password)
+        private string shopName;
+        private List<string> products;
+        public string ShopName
         {
-            StoreName = storeName;
+            get
+            {
+                return shopName;
+            }
+            set
+            {
+                shopName = value;
+            }
+        }
+        public List<string> Products
+        {
+            get
+            {
+                return products;
+            }
+            set
+            {
+                products = value;
+            }
+        }
+        public Seller(string name, UserRole role, string login, string password, string shopName) : base(name, role, login, password) 
+        { 
+            this.shopName = shopName;
         }
 
+        
     }
 }

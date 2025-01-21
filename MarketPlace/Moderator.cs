@@ -8,13 +8,14 @@ namespace MarketPlace
 {
     public class Moderator : Person
     {
-        public string Uniquepass { get; set; }
-        public string UniqueLogin { get; set; }
-
-        public Moderator(string name, string email, string phone, UserRole role, string login, string password, string uniquepass, string uniquelogin) : base(name, email, phone, role, login, password)
+        private readonly string securityCode;
+        public string SecurityCode
         {
-            Uniquepass = uniquepass;
-            UniqueLogin = uniquelogin;
+            get
+            {
+                return securityCode;
+            }
         }
+        public Moderator(string name, UserRole role, string login, string password, string securityCode) : base(name, role, login, password) { this.securityCode = securityCode; }
     }
 }
