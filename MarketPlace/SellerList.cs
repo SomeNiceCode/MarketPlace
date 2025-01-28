@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarketPlace.Users;
 
 namespace MarketPlace
 {
     public static class SellersList      // класс для хранения списка продавцов
     { 
         private static List<Seller> sellers = new List<Seller>();
-        public static void AddSeller(Seller seller)
+        public static void RegisterSeller(Seller seller)
         { 
             sellers.Add(seller); 
         } 

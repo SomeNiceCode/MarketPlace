@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MarketPlace.AbstractClasses;
 
-namespace MarketPlace
+namespace MarketPlace.Users
 {
     public class Customer : Person
     {
@@ -38,6 +39,6 @@ namespace MarketPlace
             this.email = email;
         }
 
-        
+
     }
 }
