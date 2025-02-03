@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using MarketPlace.Users;
 
-namespace MarketPlace
+namespace MarketPlace.UsersLists
 {
     public static class ModeratorsList             // этот класс для фиксированного списка модераторов
     {
-        public static List<Moderator> Moderators 
-        { 
+        public static List<Moderator> Moderators
+        {
             get;
             private set;
         }
@@ -22,9 +22,9 @@ namespace MarketPlace
                 new Moderator("Alexandr", UserRole.Moderator, "Alex34", "343434", "34")
             };
         }
-        public static List<Moderator> GetModerators() 
-        { 
-            return Moderators; 
+        public static List<Moderator> GetModerators()
+        {
+            return Moderators;
         }
     }
 }

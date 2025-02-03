@@ -5,18 +5,18 @@ using System.Text;
 using System.Threading.Tasks;
 using MarketPlace.Users;
 
-namespace MarketPlace
+namespace MarketPlace.UsersLists
 {
     public static class CustomersList                          // этот класс для списка покупателей
-    { 
+    {
         private static List<Customer> customers = new List<Customer>();
-        public static void RegisterCustomer(Customer customer) 
-        { 
-            customers.Add(customer); 
+        public static void RegisterCustomer(Customer customer)
+        {
+            customers.Add(customer);
         }
-        public static List<Customer> GetCustomers() 
-        { 
-            return customers; 
-        } 
+        public static List<Customer> GetCustomers()
+        {
+            return customers;
+        }
     }
 }

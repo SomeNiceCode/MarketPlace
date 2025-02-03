@@ -11,7 +11,10 @@ namespace MarketPlace.Users
     {
         private string phoneNumber;
         private string email;
+        public List<Product> Purchases { get; set; }
+
         public string PhoneNumber
+
         {
             get
             {
@@ -37,6 +40,7 @@ namespace MarketPlace.Users
         {
             this.phoneNumber = phoneNumber;
             this.email = email;
+            Purchases = new List<Product>();
         }
 
 
